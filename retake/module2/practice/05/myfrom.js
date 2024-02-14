@@ -1,21 +1,19 @@
 function init() {
     // in head 
-    const headEle = document.querySelector('head')
     // create title element & add title element 
     const titleEle = document.createElement('title')
     titleEle.textContent = 'Registration Form'
-    headEle.appendChild(titleEle)
+    document.head.appendChild(titleEle)
 
     // in body
-    const bodyEle = document.querySelector('body')
     // create h2 element & add h2 element 
     const h2Ele = document.createElement('h2')
     h2Ele.textContent = 'Register'
-    bodyEle.appendChild(h2Ele)
+    document.body.appendChild(h2Ele)
 
     // create first div
     const firstDiv = document.createElement('div')
-    h2Ele.appendChild(firstDiv)
+    document.body.appendChild(firstDiv)
     // create label element 
     const labelEle1 = document.createElement('label')
     labelEle1.setAttribute('for', 'name')
@@ -32,7 +30,7 @@ function init() {
 
     // create second div
     const secondDiv = document.createElement('div')
-    h2Ele.appendChild(secondDiv)
+    document.body.appendChild(secondDiv)
     // create label element 
     const labelEle2 = document.createElement('label')
     labelEle2.setAttribute('for', 'name')
@@ -49,7 +47,7 @@ function init() {
 
     // create third div
     const thirdDiv = document.createElement('div')
-    h2Ele.appendChild(thirdDiv)
+    document.body.appendChild(thirdDiv)
     // create button element
     const buttonEle = document.createElement('button')
     buttonEle.type = 'submit'
@@ -59,7 +57,7 @@ function init() {
 
     // create fourth div
     const fourthdDiv = document.createElement('div')
-    h2Ele.appendChild(fourthdDiv)
+    document.body.appendChild(fourthdDiv)
 
     // add event
     buttonEle.addEventListener('click', showUserRegister)
