@@ -51,7 +51,6 @@ function clearQuiz() {
 
 function checkAnswer(e) {
     const userAnswer = e.target.textContent
-    console.log(userAnswer);
     const divAnswer = document.querySelector('.answer')
 
     if (userAnswer === randomQuiz.answer) {
